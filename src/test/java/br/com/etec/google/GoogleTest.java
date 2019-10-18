@@ -15,8 +15,8 @@ public class GoogleTest {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("https://www.google.com.br/");
-		driver.findElement(By.name("q")).sendKeys("QA Wolf");
+		driver.get("https://globoesporte.globo.com");
+		//driver.findElement(By.name("q")).sendKeys("QA Wolf");
 		Thread.sleep(2000);
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);	
 		Thread.sleep(2000);
